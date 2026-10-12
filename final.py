@@ -60,11 +60,48 @@ room2 = "You made it to a new house"
 
 
 # Room 3 and functions(MA)
-guesses = 5
-room3 = input("You were able to escape from verity by running in a small part of the woods. You see a small chest with a 4 diget code lock, next to it is a small peice of paper with a blank space then a 5, another blank space and then a 7 there are only two numbers to guess. you know it's a number 10 through 15 enter your gess: ")
+guess = 0
+
+while guess != 67:
+    guess = int(input("Guess a number from 1 to 67: "))
+
+    if guess < 1 or guess > 67:
+        print("Pick a number between 1 and 67!")
+    elif guess < 67:
+        print("Too low! Try again.")
+    elif guess > 67:
+        print("Too high! Try again.")
+    else:
+        break
+
+print("Correct! Your first number is 67.")
 
 
+guess = 0
 
+while guess != 41:
+    guess = int(input("Guess a number from 1 to 67: "))
+
+    if guess < 1 or guess > 67:
+        print("Pick a number between 1 and 67!")
+    elif guess < 41:
+        print("Too low! Try again.")
+    elif guess > 41:
+        print("Too high! Try again.")
+
+print("Correct! Your second number is 41.")
+
+code = "67" + "41"
+
+print("you have the two pieces of code. Use then to unlock the chest")
+
+chest_guess = input("Enter the four-digit chest code: ")
+
+while chest_guess != code:
+    print("Wrong code! Try again.")
+chest_guess = input("Enter the four-digit chest code: ")
+
+print("The chest opens. inside a key fragment is found")
 
 
 # Room 4 and functions (AB) it will be a three number guessing game with a 2 minute timer if timer runs out of time you get death screened.
