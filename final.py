@@ -166,15 +166,15 @@ while True:
     if key_fragments >= 3:
         print(
             """You managed to find the final key fragment! You run over to the portal with your key.
-After unlocking the chest, you find the portal activator. You use it and successfully make it to the real world!
+        After unlocking the chest, you find the portal activator. You use it and successfully make it to the real world!
 
-                                                                                              GOOD ENDING"""
+                                                         GOOD ENDING"""
         )
     else:
         print(
             """Unfortunately, you did not find the final key fragment. Due to this, you are struggling to run away from Verity.
-He turns evil and starts chasing you. Sadly, your running cannot last forever.
-                                                                                                 BAD ENDING"""
+                            He turns evil and starts chasing you. Sadly, your running cannot last forever.
+                                                               BAD ENDING"""
         )
 
     play_again = input("Do you want to play again? (y/n): ").strip().lower()
